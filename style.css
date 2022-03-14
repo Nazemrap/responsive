@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+html {
+    background-image: url(./assets/bg-main-desktop.png);
+
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62px;
+    margin-bottom: 91px;
+}
+
+/* ====
+ Typography
+   ===*/
+
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 88px;
+    word-spacing: -1px;
+    margin-top: 8rem;
+}
+
+h2  {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 52px;
+    word-spacing: -1px;
+    color: azure;
+}
+
+
+h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px; 
+    margin-top: 40px;
+    padding-right: 100px;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px; 
+}
+
+
+/* ====
+ Sections 
+   ===*/
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 70px;
+    gap: 40px;
+}
+
+main {
+    margin-top:321px;
+    margin-bottom: 202px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* ====
+ Esthetics
+   ===*/
+
+.top-right-patern {
+    position: relative;
+    float: right;
+    top: -78px;
+}
+
+
+.middle_design {
+    max-width: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #191826;
+    border-radius: 1rem ;
+}
+
+.phone {
+    position: relative;
+    height: 642px;
+    left: 3%;
+    top: -200px;
+    
+}
+
+.orangeBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 446px;
+    min-width: 420px;
+    height: 625px;
+    padding: 54px;
+    background-color: #fa7452;
+    border-radius: 10px;
+    left: -6%;
+    top: 128px;
+}
+
+/* ====
+ Orange Box
+   ===*/
+
+
+.description {
+    margin-top: 22px;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    line-height:36px; 
+}
+
+#price {
+    display: flex;
+    align-items: center; 
+    margin-top: 39px;
+    margin-bottom: 40px;
+}
+
+#price > h2 {
+    display: flex;
+    align-items: center; 
+}
+
+#price > p {
+    margin-left: 10px;
+    color: white;
+
+}
+
+.btnIOS,
+.btnAND {
+    display: flex;
+    align-items: center; 
+    min-height: 61px;
+}
+
+.btnIOS {
+    display: flex;
+    height: 61px;
+    justify-content: center;
+    align-items: center;
+    background-color: #191826;
+    border-radius: 10px ;
+    cursor: pointer;
+}
+
+.btnIOS:hover {
+    background-color: #66e2dc;
+}
+
+
+.btnIOS > p {
+    color: white;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.btnAND {
+    height: 61px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFAF9;
+    border-radius: 10px ;
+    cursor: pointer;
+}
+
+.btnAND:hover {
+    background-color: #ffb964;
+}
+
+.btnAND > p {
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    font-weight: bolder;
+} 
+
+
+/* ====
+ Footer esthetic
+   ===*/
+
+
+.rights {
+    margin-left: 138px;
+}
+
+.rights > p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.mail {
+    font-weight: bolder;
+}
+.socials {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: flex-end;
+    max-width: 650px;
+}
+
+.comm {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    flex: 1;
+}
+
+
+.socials >* {
+    cursor: pointer;
+    padding: 10px;
+    fill: none;
+}
+.socials >a :hover {
+    fill: #FA7453;
+}
+
+/*
+  ++++
+MEDIAS CONVERSION
+  ++++
+*/
+
+
+@media (max-width: 768px) {
+
+    body {
+        margin-left: 39px;
+    }
+    
+    h1 {
+        font-size: 64px;
+        line-height: 64px;
+        word-spacing: -1px;
+        margin-top: 120px;
+    }
+
+    h6 {
+        margin-top: 00px;
+ 
+    }
+
+    .Subtitle {
+        position: relative;
+        left: 60px;
+        display: flex;
+        min-width: 520px;
+    }
+
+    
+    header{
+        padding-right: 20px;
+        margin-bottom: 211px;
+    }
+
+
+    main {
+        margin-top:50px;
+        margin-bottom: 302px;
+    } 
+
+    footer {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .middle_design {
+        flex-direction: column;
+        background-color: #191826;
+        max-height: 600px;
+    }
+    
+    .phone {
+        height: 556px;
+        left: -25%;
+        top: 350px;
+        z-index: 1;
+    }
+
+    .mid-patern2 {
+        position: relative;
+        top: -100px;
+        z-index: 0;
+    }
+
+    .orangeBox {
+        max-width: 446px;
+        min-width: 420px;
+        height: 625px;
+        padding: 54px;
+        background-color: #fa7452;
+        border-radius: 10px;
+        left: 13%;
+        top: -290px;
+        z-index: 1;
+    }
+
+
+    .top-right-patern {
+        height: 400px;
+        top: -78px;
+    }
+
+    section {
+        height: 834px;
+    }
+
+
+    .comm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 680px;
+        margin-top: 32px;
+    }
+
+    .rights {
+        margin-left: 0px;
+        display: inline;
+    }
+
+    .socials {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        padding-left: 100px;
+        max-width: 680px;
+    }
+
+    
+}
+
+@media ( max-width: 375px) {
+
+    body {
+        margin-left: 0px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+        word-spacing: -1px;
+        margin-top: 64px;
+    }
+
+    h2  {
+        font-size: 32px;
+        line-height: 40px;
+        word-spacing: -1px;
+        color: azure;
+    }
+
+    h6 {
+        margin-top: 00px;
+        font-size: 16px;
+        line-height: 26px; 
+        margin-top: 20px;
+        padding-right: 0px;
+    }
+    .Subtitle {
+        left: 0px;
+        min-width: 0px;
+    }
+
+    .logo1 {
+        margin-left: 24px;
+    }
+
+    header{
+        padding-right: 20px;
+        margin-bottom: 211px;
+        margin-left: 24px;
+    }
+
+
+    main {
+        margin-top:50px;
+        margin-bottom: 302px;
+    } 
+
+    .middle_design {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #191826;
+        height: 1024px;
+    }
+
+    .phone {
+        left: 0.5vh;
+        height: 430px;
+        top: 280px;
+        z-index: 1;
+    }
+
+    .mid-patern2 {
+        position: relative;
+        top: -50px;
+        z-index: 0;
+    }
+
+    .orangeBox {
+        max-width: 375px;
+        min-width: 375px;
+        height: 546px;
+        padding: 36px;
+        background-color: #fa7452;
+        border-radius: 10px;
+        left: 0%;
+        top: -250px;
+        z-index: 1;
+    }
+
+    .description {
+        margin-top: 22px;
+        color: white;
+        font-weight: 200;
+        font-size: 18px;
+        line-height:28px; 
+    }
+    
+    footer {
+        margin-left: 24px;
+    }
+
+    
+
+    .comm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        max-width: 327px;
+        margin-top: 32px;
+    }
+
+    .rights {
+        margin-left: 0px;
+    }
+
+    .socials {
+        padding-left: 0px;
+        flex-grow: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        left: -10px;
+        min-width: 327px;
+        margin-top: 64px;
+    }
+
+    .top-right-patern {
+        display: none;
+    }
+    section {
+        height: 1024px;
+    }
+ 
+}
